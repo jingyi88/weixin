@@ -1,0 +1,18 @@
+/* activity.wxss */
+.section {
+  text-align: center;
+}
+.search{
+  width: 15rem;
+  display: inline-block;
+  text-align: left;
+}
+.list{
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: space-between;
+}
+.img{
+  width: 150px;
+  height: 150px;
+}

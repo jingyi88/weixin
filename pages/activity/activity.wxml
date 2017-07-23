@@ -1,0 +1,21 @@
+<!--activity.wxml-->
+<view class="activity">
+  <view class="section">
+    <input class="search" placeholder="请输入搜索关键字" />
+  </view>
+
+  <view class="section">
+    <view class="list" wx:for="{{lists}}" wx:key="*this.id">
+      <view class="img">
+        <image src="{{item.imgUrl}}"></image>
+      </view>
+      <view class="des">
+        <text>{{item.productName}}</text>
+        <text>{{item.permissionNumber}}</text>
+        <text>{{item.factory}}</text>
+        <text>{{item.price}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
