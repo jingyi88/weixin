@@ -1,64 +1,86 @@
-//index.js
-//获取应用实例
-var app = getApp()
+// user.js
 Page({
-  data: {
-    motto: 'Hello World',
-    userInfo: {}
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  onLoad: function () {
-    console.log('onLoad')
-    var that = this
-    //调用应用实例的方法获取全局数据
-    app.getUserInfo(function(userInfo){
-      //更新数据
-      that.setData({
-        userInfo:userInfo
-      })
-    })
-  },
-  data: {
-    objectArray: [
-    { id: 5, unique: 'unique_5'},
-    { id: 4, unique: 'unique_4'},
-    { id: 3, unique: 'unique_3'},
-    { id: 2, unique: 'unique_2'},
-    { id: 1, unique: 'unique_1'},
-    { id: 0, unique: 'unique_0'},
-  ],
-    numberArray: [1, 2, 3, 4]
-},
-  switch: function(e) {
-  const length = this.data.objectArray.length
-  for (let i = 0; i < length; ++i) {
-    const x = Math.floor(Math.random() * length)
-    const y = Math.floor(Math.random() * length)
-    const temp = this.data.objectArray[x]
-    this.data.objectArray[x] = this.data.objectArray[y]
-    this.data.objectArray[y] = temp
-  }
-  this.setData({
-    objectArray: this.data.objectArray
-  })
-},
-addToFront: function(e) {
-  const length = this.data.objectArray.length
-  this.data.objectArray = [{ id: length, unique: 'unique_' + length }].concat(this.data.objectArray)
-  this.setData({
-    objectArray: this.data.objectArray
-  })
-},
-addNumberToFront: function(e) {
-  this.data.numberArray = [this.data.numberArray.length + 1].concat(this.data.numberArray)
-  this.setData({
-    numberArray: this.data.numberArray
-  })
-}
-})
 
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    imgUrls: [
+      '../../imgs/logo4.jpg',
+      '../../imgs/logo9.jpg',
+      '../../imgs/logo10.jpg',
+      '../../imgs/logo11.jpg'
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 2000,
+    duration: 1000,
+    items: [
+      { id: 1, message: '热门促销' },
+      { id: 2, message: '养生保健' },
+      { id: 3, message: '医疗器械' },
+      { id: 4, message: '计生用品' },
+      { id: 5, message: '日用百货' },
+      { id: 6, message: '美容护肤' },
+      { id: 7, message: '优选商家' },
+      { id: 8, message: '大牌驾到' },
+      { id: 9, message: '进入官网' },
+    ]
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
+})

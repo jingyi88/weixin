@@ -7,7 +7,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#999",
+    "navigationBarBackgroundColor": "#13B5B1",
     "navigationBarTitleText": "药店港湾网",
     "navigationBarTextStyle": "writhe"
   },
@@ -15,16 +15,19 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
-      },
-      {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "text": "首页",
+        "iconPath": "imgs/aisheng2.jpg",
+        "selectedIconPath": "imgs/aisheng4.jpg"
       },
       {
         "pagePath": "pages/user/user",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "imgs/aisheng3.jpg",
+        "selectedIconPath": "imgs/aisheng5.jpg"
       }
-    ]
+    ],
+    "color": "#fff",
+    "selectedColor": "#13B5B1",
+    "backgroundColor": "#65DED8"
   }
 }

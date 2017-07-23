@@ -1,13 +1,20 @@
 <!--index.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+ <view class="search">
+  <input type="text" placeholder="请输入商品名/通用名等" confirm-type="search" placeholder-style="color:#65DED8"/>
+ </view>
+ <view class="shuffling">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}"/>
+      </swiper-item>
+    </block>
+  </swiper>
+ </view>
+ <view class="title">
+  <view class="pic" wx:for="{{items}}" wx:key="{{item.id}}">
+     <navigator url="/pages/activity/activity">{{item.message}}</navigator>
   </view>
-  <view class="btn-area">
-    <navigator url="/pages/activity/activity" hover-class="navigator-hover">查看详情</navigator>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+ </view>
 </view>
