@@ -1,5 +1,6 @@
 /* activity.wxss */
 .section {
+  width: 100%;
   text-align: center;
 }
 .search{
@@ -10,9 +11,31 @@
 .list{
   display: flex;
   flex-wrap: nowrap;
-  align-content: space-between;
+  font-size: 24rpx;
+  margin-top: 50rpx;
+  border: 2rpx solid #65DED8;
 }
 .img{
-  width: 150px;
-  height: 150px;
+  width: 200rpx;
+  height: 200rpx;
+}
+.img image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.des{
+  width:400rpx;
+}
+.des view{
+  margin: 30rpx 0;
+}
+.number{
+  font-size: 30rpx;
+  color: crimson;
+  line-height: 200rpx;
+}
+.buy{
+  color: crimson;
+  line-height: 200rpx;
+  margin-left: 40rpx;
 }

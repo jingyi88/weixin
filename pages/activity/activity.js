@@ -7,21 +7,21 @@ Page({
   data: {
     lists: [{
       id: 1,
-      imgUrl: 'http://183.129.228.34:9000/public/upload/shopGoods/1/SP000000016/picture/94545bcd-8f6d-419e-8942-9058ea9e3142_600.jpg',
+      imgUrl: '../../imgs/logo9.jpg',
       productName: '小儿帖',
       permissionNumber: 'XXXXXXX',
       factory: '杭州',
       price: 90
     }, {
       id: 2,
-      imgUrl: 'http://183.129.228.34:9000/public/upload/shopGoods/1/SP000000016/picture/94545bcd-8f6d-419e-8942-9058ea9e3142_600.jpg',
+      imgUrl: '../../imgs/logo10.jpg',
       productName: '小儿帖2',
       permissionNumber: 'XXXXXXX',
       factory: '杭州',
       price: 90
       }, {
       id: 3,
-      imgUrl: 'http://183.129.228.34:9000/public/upload/shopGoods/1/SP000000016/picture/94545bcd-8f6d-419e-8942-9058ea9e3142_600.jpg',
+      imgUrl: '../../imgs/logo11.jpg',
       productName: '小儿帖3',
       permissionNumber: 'XXXXXXX',
       factory: '杭州',

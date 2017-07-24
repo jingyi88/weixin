@@ -1,8 +1,11 @@
-.log-list {
+.account,.password{
+  width: 600rpx;
+  height: 100rpx;
   display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+  align-items: center;
 }
-.log-item {
-  margin: 10rpx;
+.login{
+  border: 2rpx solid #13B5B1;
+  color: deepskyblue;
+  padding: 6rpx 20rpx;
 }

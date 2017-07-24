@@ -5,7 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    items: [
+      { number: 7, message: '待付款' },
+      { number: 8, message: '待收货' },
+      { number: 9, message: '全部订单' },
+    ],
+    items1: [
+      { number: 7, message: '商品' },
+      { number: 8, message: '商铺' },
+    ],
+    items2: [
+      { number: 7, message: '红包' },
+    ]
   },
 
   /**

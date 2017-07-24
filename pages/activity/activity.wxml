@@ -10,10 +10,13 @@
         <image src="{{item.imgUrl}}"></image>
       </view>
       <view class="des">
-        <text>{{item.productName}}</text>
-        <text>{{item.permissionNumber}}</text>
-        <text>{{item.factory}}</text>
-        <text>{{item.price}}</text>
+        <view>商品名：{{item.productName}}</view>
+        <view>批准文号：{{item.permissionNumber}}</view>
+        <view>生产厂家：{{item.factory}}</view>
+      </view>
+      <view class="number">{{item.price}}</view>
+      <view class="buy">
+        <navigator url="/pages/logs/logs">购买</navigator>
       </view>
     </view>
   </view>
